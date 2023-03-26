@@ -1,7 +1,7 @@
 body{
     padding: 0;
     margin: 0;
-    display: flex;
+    /*display: flex;*/
 }
 a{
     text-decoration: none;
@@ -121,7 +121,8 @@ p, h1, h2{
     padding-bottom: 30px;
 }
 .under-row{
-    display: flex;
+    display: inline;
+
     margin-top: 80px;
     margin-left: 120px;
 }

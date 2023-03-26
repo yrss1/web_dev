@@ -9,11 +9,24 @@
 /*    color: #1976d2;*/
 /*}*/
 button{
-    /*text-align: center;*/
+    text-align: center;
+    /*display: inline;*/
     margin-left: 10px;
     background: none;
-    color: #5f5fe5;
+    color: #0089d0;
     margin-top: 10px;
     font-size: 40px;
-    border: 1px solid #797a7e;
+    /*border: 1px solid black;*/
+    box-shadow: 0 0 1px black;
+}
+.category{
+    /*display: inline-block;*/
+    /*justify-items: inherit;*/
+    /*justify-content: space-between;*/
+    /*justify-content: left;*/
+    /*justify-content: space-around;*/
+    /*display: grid;*/
+}
+.category-row{
+    display: inline-block;
 }

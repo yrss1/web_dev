@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+.header-nav {
+  /*display: inline;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-nav li {
+  display: inline;
+  padding: 5px;
+  /*margin-left: 20px;*/
+  border: 1px solid #404d5b;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-nav p,
+h1,
+h2,
+h3,
+h4,
+a {
+  color: #778088;
+}
+
+body {
+  background-color: #2d3844;
+  color: #828c93;
+}
+
+a p h1 h2 h3 h4 {
+  color: black;
+}
+
+
+.c-button {
+  /* -webkit-writing-mode: horizontal-tb !important; */
+  /* -webkit-appearance: button; */
+  border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+  border-style: solid;
+  border-width: 1px;
+  padding: 1px 7px 2px;
+  text-rendering: auto;
+  color: initial;
+  display: inline-block;
+  text-align: start;
+  margin: 0em;
+  font: 400 11px system-ui;
+}

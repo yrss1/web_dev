@@ -1,4 +1,8 @@
 <div *ngFor="let category of categories" class="category">
-    <div><button (click)="category.open = !category.open">{{category.name}}</button></div>
-    <app-product-list [category]="category" *ngIf="category.open"></app-product-list>
+    <div class="category-row">
+        <button (click)="category.open = !category.open">{{category.name}}</button>
+        <div class="prduct-list">
+        <app-product-list [category]="category" *ngIf="category.open"></app-product-list>
+        </div>
+        </div>
 </div>

@@ -11,6 +11,7 @@ import { products } from '../products';
 export class ProductListComponent {
   @Input() category : Category | undefined;
   products = [...products];
+  all = products;
 
   share(url: string) {
     // const message = 'https://kaspi.kz/shop/p/logitech-g-pro-x-superlight-rozovyi-105681243/?c=750000000#!/item';
@@ -26,8 +27,20 @@ export class ProductListComponent {
       product.like.liked = false
     }
     }
-  remove({product}: { product: any }){
-    products.splice(product, 1)
+  // remove({product}: { product: any }){
+  //   products.splice(product, 1)
+  // }
+  // remove({product}: { product: any }) {
+  //   const index = products.indexOf(product, 0);
+  //   if(index >- 1){
+  //     products.splice(index, 1);
+  //   }
+  // }
+  // remove({product}: { product: any }){
+  //   products.splice(product.id, 1)
+  // }
+  remove(id : number){
+   this.products = this.all.filter(a => a.id !== id);
   }
 
   onNotify() {

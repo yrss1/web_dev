@@ -1,26 +1,37 @@
-
-img{
-    width: 100px;
-}
-.product{
-    /*width: 400px;*/
-    /*height: 400px;*/
-    border: 1px solid #a69393;
+.product-main{
+    width: 400px;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 0.25rem;
+    /*display: flex;*/
+    align-items: center;
+    border: 1px solid #797a7e;
+    /*flex-direction: column;*/
+    margin-bottom: 0.5rem;
+    text-align: center;
     margin-top: 10px;
+}
+img{
+    width: 16.666667%;
+    width: 70px;
+    margin-bottom: 0.5rem;
+}
+/*like buttom*/
+.like-toggle{
+    outline:none;
+    box-shadow:none;
+    border: none;
+    width: 40px;
+    height: 30px;
+    font-size: 1.3em;
+    border-radius: 100px;
+}
 
-}
-.product-image{
-    width: 200px;
-    /*height: 300px;*/
-}
-.product-image img{
-    /*width: 100%;*/
-    /*height: 100%;*/
-    object-fit: cover;
+.like-active.basic{
+    background: #7CC576;
+    color: white;
 }
 
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
+/**/
+

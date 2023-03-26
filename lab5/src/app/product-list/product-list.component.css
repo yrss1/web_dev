@@ -1,15 +1,19 @@
+.product-body{
+    /*display: flex;*/
+    /*display: inline-block;*/
+}
 .product-main{
     width: 400px;
     padding-bottom: 1rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     border-radius: 0.25rem;
-    /*display: flex;*/
-    align-items: center;
     border: 1px solid #797a7e;
-    /*flex-direction: column;*/
+    /*display: flex;*/
+    flex-direction: row;
     margin-bottom: 0.5rem;
-    text-align: center;
+    align-items: inherit;
+    /*text-align: center;*/
     margin-top: 10px;
 }
 img{
