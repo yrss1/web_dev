@@ -1,0 +1,10 @@
+1.pip install virtualenv
+2.virtualenv myenv
+3. C:\Users\rymku\Desktop\Kbtu\web_dev\lab7\task2\myenv\Scripts\activate
+4.pip install django
+5.django-admin startproject myproject
+6. cd myproject
+7.python manage.py createsuperuser
+7.1 python manage.py migrate
+8.python manage.py createsuperuser 
+9.python manage.py runserverdfs
