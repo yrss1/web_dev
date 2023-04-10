@@ -38,7 +38,7 @@ def get_vacancy_by_id(request, vacancy_id):
             return JsonResponse(v)
     return JsonResponse({'error' : 'Vacancy not found'})
 
-def get_top_ten(request):
+def get_top_ten(request):C:\Users\rymku\Desktop\Kbtu\web_dev\lab9\hh_back
     vacancies = Vacancy.objects.order_by('-salary')[:10]
     vacancies_json = [v.to_json() for v in vacancies]
     # sorted_obj = dict(vacancies_json)
