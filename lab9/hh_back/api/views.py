@@ -16,14 +16,12 @@ def get_company_by_id(request, company_id):
             return JsonResponse(c)
     return JsonResponse({'error' : 'Company not found'})
 
-# def get_vacancy_by_company(request, company_id):
-#     company = get_company_by_id(request, company_id)
-#     vacancies = Vacancy.objects.
-#     vacancies_json = [c.to_json() for c in vacancies]
-#     # vacancy_by_company = []
-#     for v in vacancies :
-#         vacancy_by_company.append(v[company])
-#     return vacancy_by_company
+def get_vacancy_by_company(request, company_id):
+    t_company = Company.objects.get(id=company_id)
+#     companies_json = t_company.to_json()
+    vacancies = Vacancy.objects.filter(company=t_company)
+    vacancies_json = [v.to_json() for v in vacancies]
+    return JsonResponse(vacancies_json, safe=False)
 
 def vacancy_list(request):
     vacancies = Vacancy.objects.all()
@@ -38,7 +36,7 @@ def get_vacancy_by_id(request, vacancy_id):
             return JsonResponse(v)
     return JsonResponse({'error' : 'Vacancy not found'})
 
-def get_top_ten(request):C:\Users\rymku\Desktop\Kbtu\web_dev\lab9\hh_back
+def get_top_ten(request):
     vacancies = Vacancy.objects.order_by('-salary')[:10]
     vacancies_json = [v.to_json() for v in vacancies]
     # sorted_obj = dict(vacancies_json)
